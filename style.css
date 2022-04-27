@@ -6,15 +6,16 @@
     --active-header-color: #aaa;
     --active-body-color: #fff;
     --active-line-color: #888;
+    --active-text-color: #666;
 }
 
 body {
     background-color: var(--active-body-color);
+    color: var(--active-text-color);
 }
 
 header {
     background-color: var(--active-header-color);
-    color: white;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto;
@@ -27,7 +28,7 @@ h1 {
 }
 
 #modeToggle {
-    margin: auto;
+    margin: auto 1em auto auto;
     width: 2em;
 }
 
@@ -38,8 +39,36 @@ h1 {
 #profilePic {
     margin: 1em auto;
     align-self: center;
-    width: 40%;
+    width: 12em;
+    height: 12em;
+    background-image: url("assets/DannyKwolek.jpg");
+    background-position: center;
+    background-size: cover;
     border-radius: 50%;
+    border: 2px solid var(--active-emph-color);
+}
+
+#whoami {
+    font-size: 3em;
+    margin: 0 16px;
+    text-align: center;
+}
+
+.infoText {
+    font-size: 2em;
+    margin: 0 16px 24px 16px;
+    text-align: center;
+}
+
+.spacer {
+    height: 64px;
+    width: 65%;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(to right, var(--active-body-color), var(--active-line-color), var(--active-body-color)) 1;
+    margin: 0 auto 64px auto;
+}
+.colorEmph {
+    color: var(--active-emph-color);
 }
 
 main {
@@ -69,8 +98,6 @@ footer {
     width: 15%;
     margin: 1em 5% 300px 5%;
 }
-
-
 
 /* Large Screens (Desktop)*/
 @media (min-width: 1048px) {
