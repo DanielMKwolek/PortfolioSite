@@ -33,6 +33,7 @@ function toggleLightMode() {
 --active-line-color: ${colors.DarkLineColor};
 --active-text-color: ${colors.DarkTextColor};
 }`)
+        $("#modeToggle").attr("src", "assets/LightMode.png");
         $("#github").attr("src", "assets/socials/GitHub_Logo_White.png");
     } else {
         lightMode = true;
@@ -44,6 +45,7 @@ function toggleLightMode() {
 --active-line-color: ${colors.LightLineColor};
 --active-text-color: ${colors.LightTextColor};
 }`)
+        $("#modeToggle").attr("src", "assets/DarkMode.png");
         $("#github").attr("src", "assets/socials/GitHub_Logo.png");
     }
 }
