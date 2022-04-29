@@ -58,6 +58,13 @@ body {
     text-align: center;
 }
 
+#aboutme p{
+    text-align: center;
+    margin: 0 auto;
+    width: 90vw;
+    font-size: 4vw;
+}
+
 .infoText {
     font-size: 6vw;
     margin: 0 16px 24px 16px;
