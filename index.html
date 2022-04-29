@@ -1,6 +1,4 @@
 <!-- 
-
-
     Reset CSS: https://meyerweb.com/eric/tools/css/reset/
     v2.0 | 20110126
     License: none (public domain)
@@ -17,6 +15,8 @@
         <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
         <link rel="stylesheet" href="style.css">
     </head>
+
+
     <body>
             <img id="modeToggle" src="assets/DarkMode.png"/>
         <main>
@@ -24,20 +24,20 @@
                 <div id="profilePic"></div>
                 <p id="whoami">Welcome!<br>I am <span class="colorEmph">Danny Kwolek</span></p>
             </div>
-            <div class="spacer"></div>
-            <p class="infoText">These are a few of my<br><span class="colorEmph">Projects</span></p>
-            <img class ="projectPic" id="project1" src="assets/ProjectMatchmaker.png">
-            <img class ="projectPic" id="project2" src="assets/MarsSample.png">
-            <img class ="projectPic" id="project3" src="assets/MagazineLayout.png">
+            <div id="projects" class="spacer">
+                <p class="infoText">These are a few of my<br><span class="colorEmph">Projects</span></p>
+                <img class ="projectPic" id="project1" src="assets/ProjectMatchmaker.png">
+                <img class ="projectPic" id="project2" src="assets/MarsSample.png">
+                <img class ="projectPic" id="project3" src="assets/MagazineLayout.png">
+            </div>
         </main>
-        <div class="spacer"></div>
-        <p class="infoText">Connect via these<br><span class="colorEmph">Socials</span></p>
-        <footer>
-            <img class ="socialIcon" id="facebook" src="assets/socials/f_logo_RGB-Blue_1024.png">
-            <img class ="socialIcon" id="github" src="assets/socials/GitHub_Logo.png">
-            <img class ="socialIcon" id="twitter" src="assets/socials/2021 Twitter logo - blue.png">
-            <img class ="socialIcon" id="linkedIn" src="assets/socials/LinkedIn-Blue-128-┬«@2x.png">
-        </footer>
+        <div id="socials" class="spacer">
+            <p class="infoText">Connect via these<br><span class="colorEmph">Socials</span></p>
+            <a href="https://www.facebook.com" target="_blank"><img class ="socialIcon" id="facebook" src="assets/socials/f_logo_RGB-Blue_1024.png"></a>
+            <a href="https://www.github.com" target="_blank"><img class ="socialIcon" id="github" src="assets/socials/GitHub_Logo.png"></a>
+            <a href="https://www.twitter.com" target="_blank"><img class ="socialIcon" id="twitter" src="assets/socials/2021 Twitter logo - blue.png"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img class ="socialIcon" id="linkedIn" src="assets/socials/LinkedIn-Blue-128-┬«@2x.png"></a>
+        </div>
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <script src="main.js"></script>
     </body>

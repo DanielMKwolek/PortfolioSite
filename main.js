@@ -4,9 +4,9 @@ const colors = {
     DarkEmphColor: "#f00",
     DarkEmphShadowColor: "#500",
     DarkHeaderColor: "#333",
-    DarkBodyColor: "#444",
+    DarkBodyColor: "#222",
     DarkLineColor: "#000",
-    DarkTextColor: "#000",
+    DarkTextColor: "#888",
 
     LightEmphColor: "#0f0",
     LightEmphShadowColor: "#050",
@@ -52,3 +52,16 @@ function toggleLightMode() {
 toggleLightMode();
 
 $("#modeToggle").on("click", toggleLightMode);
+
+
+
+$(".projectPic").on("mouseout", (event) => {
+    console.log(event);
+    $(event.target).attr("style", "");
+});
+
+$(".projectPic").on("mouseover", (event) => {
+    console.log(event);
+    $(event.target).css("box-shadow", "2px 2px 10px 5px var(--active-emph-shadow-color)");
+    $(event.target).css("border-radius", "1%");
+});
