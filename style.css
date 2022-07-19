@@ -109,8 +109,9 @@ main {
 
 #socials {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto;
+    width: 90vw;
     margin-bottom: 30vh;
     text-align: center;
 }
